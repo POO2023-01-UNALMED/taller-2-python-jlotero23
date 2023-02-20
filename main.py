@@ -13,7 +13,7 @@ class Asiento:
 
 class Motor:
 
-    def _init_(self, registro, tipo, numeroCilindros):
+    def _init_(self, numeroCilindros, tipo, registro):
         self.registro=registro
         self.tipo=tipo
         self.numeroCilindros=numeroCilindros
