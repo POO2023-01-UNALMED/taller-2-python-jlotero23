@@ -1,8 +1,8 @@
 class Asiento:
     def __init__(self, color, precio, registro):
-        self.registro=registro
         self.color=color
         self.precio=precio
+        self.registro=registro
     def cambiarColor(self,color):
         colores = ["negro","blanco","rojo","verde","amarillo"]
         color.lower()
@@ -34,12 +34,12 @@ class Auto:
                     if i.registro!=self.registro:
                         mensaje = "Las piezas no son originales"
         return mensaje
-        
+
 class Motor:
     def _init_(self, numeroCilindros, tipo, registro):
-        self.registro=registro
-        self.tipo=tipo
         self.numeroCilindros=numeroCilindros
+        self.tipo=tipo
+        self.registro=registro
     def cambiarRegistro(self, registro):
         self.registro=registro
     def asignarTipo(self, tipo):
